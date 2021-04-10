@@ -1,4 +1,4 @@
-py_npm_proj_autoについて
+# py_npm_proj_autoについて
 tasklist.txtにnpm用のプロジェクトをCドライブ直下に自動作成、自動インストールするために、コマンドプロンプト上で実行するコマンドを1行ずつ書いていき、一気に実行するプログラム
 
 python cmd.py <プロジェクト名>

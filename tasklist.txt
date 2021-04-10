@@ -1,0 +1,14 @@
+cd c:\
+mkdir {{ project_name }}
+cd {{ project_name }}
+npm init -y
+npm i vue vuetify
+npm i -D @babel/core @babel/preset-env babel-loader vue-loader vue-template-compiler sass sass-loader css-loader style-loader deepmerge webpack webpack-cli
+type nul > webpack.config.js
+mkdir dist
+mkdir src
+type nul > src\index.js
+mkdir src\components
+copy c:\tempfile\index.html c:\{{ project_name }}\index.html
+copy c:\tempfile\App.vue c:\{{ project_name }}\src\components\App.vue
+start .

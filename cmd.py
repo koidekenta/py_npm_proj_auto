@@ -16,7 +16,9 @@ elif sys.argv[1] == "{{ project_name }}":
   sys.exit()
 
 # 区切り文字がプロジェクト名に入る場合も除去する
-
+if "\\" in sys.argv[1] == True:
+  print("The project name cannot be used.")
+  sys.exit()
 
 project_name = sys.argv[1]
 

@@ -3,7 +3,7 @@ import sys
 import platform
 
 # OSの種類を調べて、Windows 10じゃなければ、実行できないようにする
-if platform.system() != "Windows" and platform.release != "10":
+if platform.system() != "Windows" and platform.release() != "10":
   print("The OS you are using is not Windows 10.")
   sys.exit()
 
